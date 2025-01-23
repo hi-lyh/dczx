@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东城中学 - 教师介绍</title>
+    <style>
+        /* 导航栏样式 */
+        nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center; /* 添加此行以实现水平居中 */
+}
+ 
+nav a {
+    /* 移除 float: left; */
+    display: inline-block; /* 添加此行以使链接内联并允许设置宽度和边距 */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 当前页面导航栏选项颜色加深 */
+        nav a.active {
+            background-color: #666;
+        }
+
+        /* 内容部分样式 */
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .teacher-image {
+            width: 200px;
+            height: auto;
+        }
+
+        .teacher-info {
+            margin-bottom: 20px;
+        }
+
+        .teacher-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* 返回顶部按钮 */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="jsjs.html" class="active">教师介绍</a>
+        <a href="xxry.html">学校荣誉</a>
+        <a href="lxfs.html">联系方式</a>
+    </nav>
+
+    <!-- 内容部分 -->
+    <div class="content">
+        <img src="teachers.jpg" alt="教职工合照">
+        <div class="teacher-info">
+            <img class="teacher-image" src="teacher1.jpg" alt="img/teacher1.jpg" style="float: left;">
+            <div style="margin-left: 220px;">
+                <p class="teacher-name">徐彬</p>
+                <p>适逢建党100周年，学校书记徐彬对2021年学校党建工作的计划进行了详细解读，从落实党建责任制工作、落实党风廉政责任制、建立“党团队同心圆”机制、加强和改进意识形态工作、加强宣传阵地建设等方面对全体党员教师提出了新的要求。</p>
+            </div>
+        </div>
+        <div class="teacher-info">
+            <img class="teacher-image" src="teacher2.jpg" alt="img/teacher2.jpg" style="float: right;">
+            <div style="margin-right: 220px;">
+                <p class="teacher-name">赵莉莉</p>
+                <p>校长助理赵莉莉从加强党团队一体化建设、创建德育的电子资源库、细化“美好成长”体系等方面介绍本学期小学德育重点工作。</p>
+            </div>
+        </div>
+        <div class="teacher-info">
+            <img class="teacher-image" src="teacher3.jpg" alt="img/teacher3.jpg" style="float: left;">
+            <div style="margin-left: 220px;">
+                <p class="teacher-name">王咏梅</p>
+                <p>校长助理王咏梅回顾了寒假期间忙碌的工作和生活，从进一步优化弘毅少年评价制度、关注师生身心健康等方面介绍了新学期的中学德育重点工作，要求全体师生一定要严格遵守防疫要求，严守学校防疫底线，通过对防疫知识的现场提问，老师们对防疫要求已经内化于心。</p>
+            </div>
+        </div>
+        <div class="teacher-info">
+            <img class="teacher-image" src="teacher4.jpg" alt="img/teacher4.jpg" style="float: right;">
+            <div style="margin-right: 220px;">
+                <p class="teacher-name">杨国军</p>
+                <p>校长助理杨国军对新学期的教学工作计划进行了细致的解读，从合格教研组考核、教师集体备课、上课等方面对教师提出了新的要求。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top" onclick="window.scrollTo(0, 0);">↑</div>
+</body>
+
+</html>
